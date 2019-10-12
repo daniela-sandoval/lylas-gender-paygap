@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ChatBot from 'react-simple-chatbot';
+import logo from './logo.svg';
 
 const arrayCompanies = ["PowerBitches", "Wager", "Quartet", "Dress For Success", "81cents", "Flatiron"]
 
@@ -30,7 +31,7 @@ const steps = [
     id: '4',
     options: [
     { value: 1, label: 'Offer w/ Recruiter', trigger: '5' },
-    { value: 2, label: 'Negotioting', trigger: '5' },
+    { value: 2, label: 'Negotiating', trigger: '5' },
     { value: 3, label: 'Mock Interview', trigger: '5' },
     { value: 4, label: 'Salary Expectations', trigger: '14' },
   ]

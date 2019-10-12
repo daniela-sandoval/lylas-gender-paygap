@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Typewriter from 'typewriter-effect';
 import Chat from './chat.js'
+import { faKeyboard } from "@fortawesome/fontawesome-free-solid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './App.css';
 
 
@@ -17,7 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <FontAwesomeIcon className="App-logo" icon={faKeyboard}/>
           <Typewriter
             options={{
               strings: ['PRACTICE MAKES PERFECT'],
@@ -26,7 +27,9 @@ class App extends Component {
             }}
             />
           <p>Normalizing the negotiotion salary talk</p>
-          <button onClick={this.handleClick}>Start Practicing</button>
+          <button className="onscreen-btn"onClick={this.handleClick}>Sign up</button>
+          <br/>
+          <button className="onscreen-btn"onClick={this.handleClick}>Log In</button>
         </header>
         <Chat />
       </div>
