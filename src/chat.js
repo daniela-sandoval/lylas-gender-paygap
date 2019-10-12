@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
 import ChatBot from 'react-simple-chatbot';
-import logo from './logo.svg';
+import { ThemeProvider } from 'styled-components';
 
 const arrayCompanies = ["PowerBitches", "Wager", "Quartet", "Dress For Success", "81cents", "Flatiron"]
 
 const rand = arrayCompanies[Math.floor(Math.random() * arrayCompanies.length)]
+
+const theme = {
+  background: '#f5f8fb',
+  fontFamily: 'Montserrat',
+  headerBgColor: '#944eb8',
+  headerFontColor: '#fff',
+  headerFontSize: '15px',
+  botBubbleColor: '#944eb8',
+  botFontColor: '#fff',
+  userBubbleColor: '#fff',
+  userFontColor: '#4a4a4a',
+}
 
 const steps = [
   {
@@ -96,7 +108,9 @@ class Chat extends Component {
   render() {
     return (
       <div>
-      <ChatBot steps={steps} />
+        <ThemeProvider theme={theme}>
+          <ChatBot steps={steps} />
+        </ThemeProvider>
       </div>
     )
   }
