@@ -21,7 +21,7 @@ class App extends Component {
           <FontAwesomeIcon className="App-logo" icon={faKeyboard}/>
           <Typewriter
             options={{
-              strings: ['PRACTICE MAKES PERFECT'],
+              strings: ['PRACTICE MAKES PAYCHECK'],
               autoStart: true,
               loop: true
             }}
